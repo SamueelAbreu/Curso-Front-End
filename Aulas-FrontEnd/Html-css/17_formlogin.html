@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel">
+    <title>Formulario</title>
+</head>
+    <style>
+        .formLogin{
+            width: 250px;
+            margin: 50px auto 0;
+            font-family: sans-serif;
+        }
+        .formLogin fieldset{
+            background-color: #ccc;
+        }
+        .formLogin label{
+            margin-top: 15px;
+            display: block;
+        }
+        #user, #pass, .btn{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+        }
+        .btn{
+            margin-top: 15px;
+        }
+        .formLogin legend{
+            display: block;
+            padding: 5px;
+            background-color: white;
+
+        }
+        #user{
+            margin-bottom: 15px;
+        }
+        #user, #pass{
+            background-color: #ddd;
+        }
+        #user:focus, #pass:focus{
+            background-color: white;
+        }
+    </style>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="http://google.com/search" method="GET">
+        <label for="txtbusca">Faça uma busca: </label>
+        <input type="text" name="q" id="txtbusca">
+        <input type="submit" value="Ok">
+
+    </form>
+
+    <hr>
+    <br>
+    
+    <form action="pagina.php" method="GET">
+        <fieldset>
+            <legend>Login</legend>
+            <Label for="log">User: </Label>
+            <input type="text" name="text" id="log">
+            <label for="pass">Password: </label>
+            <input type="password" name="pass" id="pass">
+            <input type="submit" value="Login">
+        </fieldset>
+    </form>
+
+    <br>
+    <hr>
+
+    <form action="#" method="post" class="formLogin">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="user">Digite o seu usuario</label>
+            <input type="text" id="user" name="user" autofocus>
+            <label for="pass">Digite a senha</label>
+            <input type="password" id="pass" name="pass">
+            
+            <input type="submit" value="Logar" class="btn">
+        </fieldset>
+    </form>
+
+</body>
+</html>
