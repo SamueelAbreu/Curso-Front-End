@@ -1,0 +1,106 @@
+body{
+    font-family: arial, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+
+}
+.hero{
+    background-image: url(../_img/bg-3.jpg);
+    height: 600px;
+    background-position: right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 150px;
+}
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px #333;
+}
+.hero-content p{
+    background-color: rgba(33, 33, 33, 0.5);
+    font-size: 19px;
+    padding: 15px;
+    display: inline-block;
+    border-bottom: 2px solid white;
+
+}
+.hero nav ul{
+    text-align: right;
+    margin: 25px 50px 0px 0px;
+}
+.hero nav li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+}
+.hero nav a{
+    background: rgba(0, 0, 0, 0.4);
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.hero nav a:hover{
+    background: rgba(0, 0, 0, 0.6);
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+.content-section{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    overflow: auto;
+}
+.borda-do-titulo{
+    margin: 0;   
+}
+.borda-do-titulo h2{
+    text-align: left;
+    background-color: #ececec;
+    height: 40px;
+    border-bottom-style: solid;
+    border-color: #ccc;
+    border-right: 3px;
+    line-height: 40px;
+  
+}
+.rodape{   
+    height: 80px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-color: gray;
+    line-height: 80px;
+}
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+.card p{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0;
+    padding: 15px;
+}
+.card-1, .card-2{
+    margin-right: 2%;
+}
