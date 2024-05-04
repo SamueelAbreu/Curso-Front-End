@@ -1,0 +1,162 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            /*article b{    todo B que está dentro de um Artigo, independente se tenha outra tag entre eles. {h3 p p p a a a B B B}
+                background-color: red;
+            }*/ 
+
+            /*article p b{   todo B que esta dentro de um P e que está dentro de uma tag ARTICLE {h3 p p p a a a B B B}
+                background-color: red;
+            }*/
+
+            /*article p > b{ todo filho direto de P que seja B, no caso atual, nenhum {h3 p p p}
+                background: red;
+            }*/
+
+            /*article h3 + p{ irmao adjacente (termo imediatamente após o h3) que seja um P {h3 P p p}
+                background: red;
+            }*/
+
+            /*article p + p{  todo P que vem imediatamente após outro P {h3 p P P}
+                background: red;
+            }*/
+
+            /*article h3 ~ p{ proximos irmãos, todo P que esteja imediatamente após h3 {h3 P P P}
+                background: red;
+            }*/
+
+            /*a[title]{ toda tag A que tenha o atributo title="" (essa nao <a> sem titulo</a> essa sim <a title=""> com titulo </a>)
+                color: red;
+            }*/
+
+            /*img[alt="X"]{ toda tag IMG que tenha ALT com algum valor X ex: img alt="X" essa sim ---- img alt="Y" essa nao
+                border-color: red;
+            }*/
+
+            /*a[href^="http..."] ^ toda tag A que tenha um href que se inicia com HTTP */
+
+            /*img[src$=".png."] ^ toda tag IMG que tenha um src que termina com .png */
+
+            /*p:not(.destaque) todo paragrafo que nao possui a class="destaque"*/
+
+            article:nth-child(1) a{
+                color: red;
+            }
+            
+            article:nth-child(3) > p{
+                color: red;
+            }
+            
+            article:nth-child(5) h3 + p{
+                margin-top: 50px;
+            }
+            
+            article:nth-child(7) h3 ~ p{
+                color: orange;
+            }
+            
+            article:not(.destaque){
+                color: orange;
+            }
+            
+            .destaque{
+                background: yellow;
+            }
+            
+            a[href="#"]{
+                opacity: .2;
+            }
+            
+            a[href^="http"]{
+                color: red;
+            }
+            
+            a[title]{
+                color: green;
+            }
+            
+            a[href$=".pdf"]{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <article>
+            <h3>
+                titulo
+            </h3>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        <hr>
+        
+        <article>
+            <h3>
+                titulo
+            </h3>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        <hr>
+        
+        <article>
+            <h3>
+                titulo
+            </h3>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        <hr>
+        
+        <article>
+            <p> antes do titulo</p>
+            <h3>
+                titulo
+            </h3>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        <hr>
+        
+        <article class="destaque">
+            <p> antes do titulo</p>
+            <h3>
+                titulo
+            </h3>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+            <p> paragrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+        </article>
+        
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="http://serfrontend.com" target="_blank">link externo</a></li>
+            <li><a href="http://serfrontend.com/qq.pdf" >link externo</a></li>
+            <li><a href="23_transition.html" title="veja exercicio anterior">link interno</a></li>
+        </ul>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>
